@@ -1,13 +1,21 @@
 # WG Resource Management
 
-A working group that is a cross-team effort sponsored by sig-node and sig-scheduling with
-a focus on improving Kubernetes resource management.
+A working group that is a cross-SIG effort currently sponsored by sig-node and sig-scheduling with
+a focus on improving Kubernetes Compute Resource Management.
 
-Many advanced resource management topics span these two functional areas, and this working
-group is intended to support collaboration.  Prior to pursuing major changes in resource
+Features tackled in this workgroup typically span more than one of the following SIGs:
+* SIG-Node
+* SIG-Scheduling
+* SIG-Autoscaling
+* SIG-Instrumentation
+* SIG-Storage
+* SIG-Networking
+
+Many advanced resource management topics span these functional areas, and this working
+group is intended to support collaboration. Prior to pursuing major changes in compute resource
 management, it is encouraged that community members share their ideas in this working group
-to reach broad consensus across the sigs.  Once consensus is reached, the enhancements
-are then managed by the appropriate sig based on impacted areas of code.
+to reach broad consensus across the SIGs. Once consensus is reached, the enhancements
+are then managed by the appropriate SIGs based on impacted areas of code.
 
 It is an open and active working group, and we always welcome new additions!
 
@@ -15,13 +23,13 @@ It is an open and active working group, and we always welcome new additions!
 
 Topics include, but are not limited to:
 
-* performance sensitive pods (exclusive cores, cpu pinning strategies, numa)
-* integrating new devices (gpus, fpga, etc.)
-* isolation of new resources (hugepages, caches, etc.)
-* enhancements to quality of service
+* Support for Performance sensitive workloads (exclusive cores, cpu pinning strategies, numa)
+* Integrating new hardware devices (gpus, fpga, infiniband, etc.)
+* Improving resource isolation (local storage, hugepages, caches, etc.)
+* Improving Quality of Service (Performance SLOs)
+* Performance benchmarking
+* APIs and extensions related to the features mentioned above 
 * ...
-
-Basically, any topic that may span [sig-node](../sig-node) and [sig-scheduling](../sig-scheduling).
 
 ## Contact us:
 
@@ -42,5 +50,5 @@ At this time, the group discussion primarily occurs on sig-node slack channel.
 ## Team:
 
 * Organizer: [Derek Carr] (https://github.com/derekwaynecarr) <decarr@redhat.com>, Red Hat
-* Organizer: [Vish Kannan] (https://github.com/vishh) <vishnuk@google.com>, Google
+* Organizer: [Vish Kannan] (https://github.com/vishh) <vishh@google.com>, Google
 * And too many regular participants to list here...
